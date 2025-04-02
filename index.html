@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-     <header>
+    <div class="hider"> 
+        <header>
             <div class="container">
   <div class="header">
     <div class="header-left">
@@ -32,10 +33,17 @@
             <i class="fa-solid fa-bars" id="hamburger"></i></div>
 
             <div class="header2-menues nav-items">
-                <div class="menuies">  
-                <div class="menu"><a class="a" href="#">Понравилось</a></div>
-                <div class="menu"><a class="a" href="#">личный кабинет</a></div>
-                <div class="menu"><a class="a" href="#">настройки</a></div>
+                <div class="menuies drop">  
+                <div class="menu hover"><a class="a" href="#Понравилось">Понравилось</a>
+                </div>
+                <div class="menu hover"><a class="a" href="#личный кабинет">личный кабинет</a>
+                <div class="dropdown">
+                    <p>Yotoqxona</p>
+                    <p>Oshxona</p>
+                    <p>Mehmonxona
+                    </p>
+                </div></div>
+                <div class="menu"><a class="a" href="#настройки">настройки</a></div>
             </div>
               
               <div>
@@ -43,13 +51,14 @@
                 <img src="./images/gridicons_search.svg" alt="">
               </div>
             </div>
-        </div>  
+        </div>  </div>
+    
         
-        <div  class="section-one">
+        <div  class="section-one" id="Понравилось">
             <img class="img" src="./images/logo (8).svg" alt="">
           <div class="p-p"> <p class="section-one-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.</p></div> 
         </div>
-        <div class="section-two">
+        <div class="section-two" id="личный кабинет">
             <div class="section-two-left">
                 <p class="section-two-text1">СЕЗОН 2020/21</p>
         
@@ -81,7 +90,7 @@
         </div> 
 
 
-        <div class="section-three">
+        <div class="section-three" id="настройки">
             <img class="imgcha" src="./images/Rectangle 9 (1).svg" alt="">
             <div class="section-three-right">
                 <p class="section-three-right-top__text">коллекция 2018</p>
@@ -150,5 +159,8 @@
             </div>
         </footer>  
         <script src="./js/main.js"></script>
+        <a class="top-up"
+        href="#top"> <button><img src="./vertical_align_top_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button></a>
+   
 </body>
 </html>

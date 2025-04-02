@@ -5,7 +5,7 @@
 
 }
 
-/* 1920-905+40 */
+
 .container {
     max-width: 1055px;
     margin: 0 auto;
@@ -13,7 +13,7 @@
     padding-right: 20px;
 }
 
-/* max width qisqaradi lekin kattalashmaydi */
+
 header {
     padding: 14px 0;
     background-color: rgba(0, 0, 0, 1);
@@ -39,7 +39,7 @@ header {
     display: none;
 }
 
-/* responsivli yoschi */
+
 @media (max-width: 509px) {
     .header {
         flex-direction: column;
@@ -89,9 +89,6 @@ header {
     text-align: center;
 }
 
-/* @media (max-width:412px) {
-
-} */
 
 
 .p2 {
@@ -126,13 +123,14 @@ header {
 
 @media (max-width:740px) {
     .header2-menues {
-        display: none !important;  
-    } 
+        display: none !important;
+    }
 }
 
-.active{
+.active {
     display: flex !important;
 }
+
 @media (max-width:740px) {
     .header2 {
         flex-direction: column;
@@ -152,7 +150,8 @@ header {
     .header2-menues {
         display: none;
     }
-    .active{
+
+    .active {
         display: flex;
     }
 }
@@ -177,7 +176,11 @@ header {
     height: 80px;
     top: 44px;
     left: 978px;
+    /* position: relative; */
+}
 
+.drop {
+    position: relative;
 }
 
 .menu :hover {
@@ -241,6 +244,7 @@ header {
     background-image: url("../images/Rectangle\ 3.svg");
     background-size: cover;
     background-position: center;
+    margin-top: 120px;
 }
 
 
@@ -257,9 +261,44 @@ header {
     color: rgba(255, 255, 255, 1);
     padding: 80px 0px 154px;
 }
+.hover:hover{
+    display: flex;
+}
+.drops{
+    position: absolute;
+    background-color: white;
+display: flex;
+flex-direction: column;
+gap: 5px;
+padding: 10px;
+top: 60px;
+left:189px;
+display: none;  
+}
+.dropdown {
+    position: absolute;
+    background-color: white;
+display: flex;
+flex-direction: column;
+gap: 5px;
+padding: 10px;
+top: 60px;
+left:189px;
+display: none;
+}
+.hover:hover .dropdown{
+    display: flex;
+}
+
 
 .p-p {
     margin: 0 auto;
+}
+
+.hider {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .section-two-text1 {
@@ -288,13 +327,21 @@ header {
     width: 960px;
     height: 730px;
     top: 934px;
-    /* display: flex; */
+
+}
+
+.top-up {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    padding: 10px;
+    background-color: none;
 }
 
 
 .section-two {
     display: flex;
-    /* flex-wrap: wrap; */
+
 
 }
 
